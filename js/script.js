@@ -35,5 +35,4 @@ function Persona(nombre, edad) {
   } else {
     alert("No se encontraron personas con la edad ingresada.");
   }
-
- 
+  
