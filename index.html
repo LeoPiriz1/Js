@@ -1,14 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Carrito de productos de pizza</title>
+  
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="bg-dark text-white">
+        <div class="container">
+            <h1 class="text-center">Bienvenido a nuestra pizzería</h1>
+            <nav class="text-center">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#pizzas">Pizzas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#carrito">Carrito</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     
-    
-    <script src="js/script.js"></script>
+    <section id="pizzas" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nuestras Pizzas</h2>
+            <div class="row">
+                
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card producto">
+                        <img src="media/pizza2.jpg" class="card-img-top" alt="Pizza Pequeña">
+                        <div class="card-body">
+                            <h3 class="card-title">Pizza Pequeña</h3>
+                            <p class="card-text">Una deliciosa pizza pequeña.</p>
+                            <p class="card-text">Precio: $10.00</p>
+                            <button class="btn btn-dark" onclick="agregarAlCarrito('Pizza Pequeña', 10.00)">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card producto">
+                        <img src="media/pizza2.jpg" class="card-img-top" alt="Pizza Mediana">
+                        <div class="card-body">
+                            <h3 class="card-title">Pizza Mediana</h3>
+                            <p class="card-text">Una deliciosa pizza mediana.</p>
+                            <p class="card-text">Precio: $15.00</p>
+                            <button class="btn btn-dark" onclick="agregarAlCarrito('Pizza Mediana', 15.00)">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card producto">
+                        <img src="media/pizza3.jpg" class="card-img-top" alt="Pizza Grande">
+                        <div class="card-body">
+                            <h3 class="card-title">Pizza Grande</h3>
+                            <p class="card-text">Una deliciosa pizza grande.</p>
+                            <p class="card-text">Precio: $20.00</p>
+                            <button class="btn btn-dark" onclick="agregarAlCarrito('Pizza Grande', 20.00)">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
 
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card producto">
+                        <img src="media/pizza4.jpg" class="card-img-top" alt="Pizza de Pollo BBQ">
+                        <div class="card-body">
+                            <h3 class="card-title">Pizza de Pollo BBQ</h3>
+                            <p class="card-text">Pollo a la parrilla, cebolla, salsa barbacoa.</p>
+                            <p class="card-text">Precio: $18.00</p>
+                            <button class="btn btn-dark" onclick="agregarAlCarrito('Pizza de Pollo BBQ', 18.00)">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card producto">
+                        <img src="media/pizza5.jpg" class="card-img-top" alt="Pizza de Vegetales">
+                        <div class="card-body">
+                            <h3 class="card-title">Pizza de Vegetales</h3>
+                            <p class="card-text">Pimientos, champiñones, cebolla, aceitunas.</p>
+                            <p class="card-text">Precio: $16.00</p>
+                            <button class="btn btn-dark" onclick="agregarAlCarrito('Pizza de Vegetales', 16.00)">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card producto">
+                        <img src="media/pizza6.jpg" class="card-img-top" alt="Pizza de Pepperoni">
+                        <div class="card-body">
+                            <h3 class="card-title">Pizza de Pepperoni</h3>
+                            <p class="card-text">Delicioso pepperoni y queso mozzarella.</p>
+                            <p class="card-text">Precio: $14.00</p>
+                            <button class="btn btn-dark" onclick="agregarAlCarrito('Pizza de Pepperoni', 14.00)">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="carrito" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Carrito de Compras</h2>
+            <ul id="lista-carrito" class="list-group mb-4">
+               
+            </ul>
+            <p class="text-center">Total: <span id="total-carrito">$0.00</span></p>
+            <button class="btn btn-danger btn-block" onclick="vaciarCarrito()">Vaciar Carrito</button>
+            <button class="btn btn-success btn-block mt-3" onclick="continuarCompra()">Continuar</button>
+        </div>
+    </section>
+    
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Pizzería
+            </p>
+        </div>
+    </footer>
+    <!-- Dentro de tu archivo HTML -->
+
+
+
+   
+    <script src="script.js"></script>
 </body>
 </html>
