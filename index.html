@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de productos de pizza</title>
+    <title>Pizziano's</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
   
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     
@@ -12,11 +16,14 @@
 <body>
     <header class="bg-dark text-white">
         <div class="container">
-            <h1 class="text-center">Bienvenido a nuestra pizzería</h1>
+            <h1 class="text-center">Pizziano's</h1>
             <nav class="text-center">
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#pizzas">Pizzas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#empanadas">Empanadas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#carrito">Carrito</a>
@@ -31,7 +38,7 @@
             <h2 class="text-center mb-4">Nuestras Pizzas</h2>
             <div class="row">
                 
-                
+              
                 <div class="col-md-4 mb-4">
                     <div class="card producto">
                         <img src="media/pizza2.jpg" class="card-img-top" alt="Pizza Pequeña">
@@ -55,7 +62,6 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="col-md-4 mb-4">
                     <div class="card producto">
                         <img src="media/pizza3.jpg" class="card-img-top" alt="Pizza Grande">
@@ -67,8 +73,6 @@
                         </div>
                     </div>
                 </div>
-
-                
                 <div class="col-md-4 mb-4">
                     <div class="card producto">
                         <img src="media/pizza4.jpg" class="card-img-top" alt="Pizza de Pollo BBQ">
@@ -80,7 +84,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-4 mb-4">
                     <div class="card producto">
                         <img src="media/pizza5.jpg" class="card-img-top" alt="Pizza de Vegetales">
@@ -92,7 +95,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-4 mb-4">
                     <div class="card producto">
                         <img src="media/pizza6.jpg" class="card-img-top" alt="Pizza de Pepperoni">
@@ -107,30 +109,138 @@
             </div>
         </div>
     </section>
+
+    <section id="empanadas" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nuestras Empanadas</h2>
+            <div class="row">
+              
+                <div class="col-md-4 mb-4">
+                    <div class="card producto">
+                        <img src="./media/carnesuave.jpg" class="card-img-top" alt="Empanada de Carne">
+                        <div class="card-body">
+                            <h3 class="card-title">Empanada de Carne</h3>
+                            <p class="card-text">Deliciosa empanada rellena de carne.</p>
+                            <p class="card-text">Precio: $3.00</p>
+                            <button class="btn btn-dark" onclick="agregarAlCarrito('Empanada de Carne', 3.00)">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card producto">
+                        <img src="media/polloo.jpg" class="card-img-top" alt="Empanada de Pollo">
+                        <div class="card-body">
+                            <h3 class="card-title">Empanada de Pollo</h3>
+                            <p class="card-text">Deliciosa empanada rellena de pollo.</p>
+                            <p class="card-text">Precio: $3.50</p>
+                            <button class="btn btn-dark" onclick="agregarAlCarrito('Empanada de Pollo', 3.50)">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card producto">
+                        <img src="media/bondiolaok.jpg" class="card-img-top" alt="Empanada de Queso">
+                        <div class="card-body">
+                            <h3 class="card-title">Empanada cerdo</h3>
+                            <p class="card-text">Deliciosa empanada rellena de cerdo.</p>
+                            <p class="card-text">Precio: $2.50</p>
+                            <button class="btn btn-dark" onclick="agregarAlCarrito('Empanada de Queso', 2.50)">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card producto">
+                        <img src="media/espinaca.jpg" class="card-img-top" alt="Empanada de Espinaca">
+                        <div class="card-body">
+                            <h3 class="card-title">Empanada de Espinaca</h3>
+                            <p class="card-text">Deliciosa empanada rellena de espinaca.</p>
+                            <p class="card-text">Precio: $3.00</p>
+                            <button class="btn btn-dark" onclick="agregarAlCarrito('Empanada de Espinaca', 3.00)">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card producto">
+                        <img src="media/jamon y queso.jpg" class="card-img-top" alt="Empanada de Jamón y Queso">
+                        <div class="card-body">
+                            <h3 class="card-title">Empanada de Jamón y Queso</h3>
+                            <p class="card-text">Deliciosa empanada rellena de jamón y queso.</p>
+                            <p class="card-text">Precio: $3.50</p>
+                            <button class="btn btn-dark" onclick="agregarAlCarrito('Empanada de Jamón y Queso', 3.50)">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card producto">
+                        <img src="media/cheesebuger.jpg" class="card-img-top" alt="Empanada de Caprese">
+                        <div class="card-body">
+                            <h3 class="card-title">Empanada de cheesebuger</h3>
+                            <p class="card-text">Deliciosa empanada cheesebuger con carne y queso cheddar</p>
+                            <p class="card-text">Precio: $3.00</p>
+                            <button class="btn btn-dark" onclick="agregarAlCarrito('Empanada de Caprese', 3.00)">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
+
     <section id="carrito" class="bg-light py-5">
         <div class="container">
             <h2 class="text-center mb-4">Carrito de Compras</h2>
             <ul id="lista-carrito" class="list-group mb-4">
-               
+                
             </ul>
             <p class="text-center">Total: <span id="total-carrito">$0.00</span></p>
-            <button class="btn btn-danger btn-block" onclick="vaciarCarrito()">Vaciar Carrito</button>
-            <button class="btn btn-success btn-block mt-3" onclick="continuarCompra()">Continuar</button>
+            <button id="vaciar-carrito" class="btn btn-danger btn-block">Vaciar Carrito</button>
+
+            <button id="continuar-compra" class="btn btn-success btn-block">Continuar</button>
+
+
         </div>
     </section>
     
     <footer class="bg-dark text-white py-3">
         <div class="container text-center">
-            <p>&copy; 2024 Pizzería
-            </p>
+            <p>&copy; 2024 Pizziano's</p>
         </div>
     </footer>
-    <!-- Dentro de tu archivo HTML -->
+  
+  
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
 
-   
-    <script src="script.js"></script>
-</body>
-</html>
+<div class="modal fade" id="modalCompra" tabindex="-1" aria-labelledby="modalCompraLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalCompraLabel">Resumen de la Compra</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul id="lista-productos-modal" class="list-group mb-4">
+                  
+                </ul>
+                <p class="text-center">Total: <span id="total-modal">$0.00</span></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <a href="#" class="btn btn-primary">Ir a Pagar</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  
+<script src="script.js"></script>
+  </body>
+  </html>
+  
+
