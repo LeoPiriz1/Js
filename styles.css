@@ -120,11 +120,18 @@ h2 {
 }
 
 .card.producto {
+    width: 100%;
+    max-width: 300px;
+    height: 450px;
     background-image: url(media/carta3.jpg);
     background-size: cover;
     background-position: center;
     border: none;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: auto;
 }
 
 .card.producto .card-body {
@@ -135,6 +142,16 @@ h2 {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+.card.producto .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
 }
 
 .card.producto .card-body img {
@@ -143,11 +160,24 @@ h2 {
     height: auto;
 }
 
-.card.producto .card-body {
-    background: rgba(255, 255, 255, 0);
-    border-radius: 0 0 10px 10px;
-    color: white;
+.card.producto .card-body h3 {
+    margin-top: 10px;
 }
+
+.card.producto .card-body p {
+    margin: 10px 0;
+}
+
+.card.producto .card-body button {
+    margin-top: auto;
+}
+
+#empanadas .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 
 #lista-carrito {
     list-style-type: none;
