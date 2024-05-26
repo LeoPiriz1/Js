@@ -2,14 +2,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20231229/pngtree-artistic-composition-hand-drawn-pizza-and-vegetables-on-a-beautiful-wood-image_13910939.png');
+    background-image: url(media/pizzahd.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 header {
-    background-image: url(media/carta.jpeg);
+    background: #000000;
+    background: linear-gradient(180deg,#000000 0%, #393939 100%);
+    background: -webkit-linear-gradient(180deg,#000000 0%, #393939 100%);
+    background: -moz-linear-gradient(180deg,#000000 0%, #393939 100%);
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -23,7 +26,7 @@ header {
 header h1 {
     margin: 0;
     font-family: 'Dancing Script', cursive;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 54px;
 }
 
@@ -63,11 +66,17 @@ section h2 {
 }
 
 h2 {
-    background-image: url('./media/carta.jpeg');
+    background-image: url('./media/piedra.jpeg');
+    border-radius: 39px 86px 38px 79px;
+-webkit-border-radius: 39px 86px 38px 79px;
+-moz-border-radius: 39px 86px 38px 79px;
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     background-size: cover;
     background-position: center;
     padding: 20px;
-    border-radius: 5px;
+    
     font-family: 'Dancing Script', cursive;
     color: rgb(224, 224, 224);
 }
@@ -112,10 +121,15 @@ h2 {
 }
 
 #carrito {
-    background-image: url(media/carta2.jpg);
+    background: #000000;
+    background: linear-gradient(180deg,#000000 0%, #393939 100%);
+    background: -webkit-linear-gradient(180deg,#000000 0%, #393939 100%);
+    background: -moz-linear-gradient(180deg,#000000 0%, #393939 100%);
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 20px;
+    border-radius: 200px 200px 0px 0px;
+    -webkit-border-radius: 200px 200px 0px 0px;
+    -moz-border-radius: 200px 200px 0px 0px;
     padding: 20px;
 }
 
@@ -123,11 +137,19 @@ h2 {
     width: 100%;
     max-width: 300px;
     height: 450px;
-    background-image: url(media/carta3.jpg);
+    background: #000000;
+    background: linear-gradient(180deg,#000000 0%, #393939 100%);
+    background: -webkit-linear-gradient(180deg,#000000 0%, #393939 100%);
+    background: -moz-linear-gradient(180deg,#000000 0%, #393939 100%);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     background-size: cover;
     background-position: center;
     border: none;
-    border-radius: 0px;
+    border-radius: 37px 75px 37px 76px;
+-webkit-border-radius: 37px 75px 37px 76px;
+-moz-border-radius: 37px 75px 37px 76px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -196,7 +218,10 @@ h2 {
 }
 
 footer {
-    background-image: url(media/carta.jpeg);
+    background: #000000;
+    background: linear-gradient(180deg,#000000 0%, #393939 100%);
+    background: -webkit-linear-gradient(180deg,#000000 0%, #393939 100%);
+    background: -moz-linear-gradient(180deg,#000000 0%, #393939 100%);
     margin-top: 20px;
     text-align: center;
     padding: 10px 0;
@@ -208,7 +233,7 @@ footer {
 }
 
 #modalCompra {
-    background-image: url(media/carta.jpeg);
+    background-image: url(media/pizzahd.jpg);
     background-size: cover;
     background-position: center;
 }
