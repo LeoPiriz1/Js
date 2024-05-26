@@ -172,7 +172,7 @@ footer {
 }
 
 #modalCompra {
-    background-image: url('/media/carta.jpeg'); 
+    background-image: url(media/carta.jpeg);
     background-size: cover;
     background-position: center;
 }
